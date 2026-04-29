@@ -4,9 +4,8 @@ const app = express();
 
 // פונקציה פשוטה שנוכל לבדוק בטסטים
 function add(a, b) {
-    return a + b;
+    return a + b + 1;  // 2+3 = 6 ❌
 }
-
 app.get('/', (req, res) => {
     res.send('CI/CD Pipeline is Working!');
 });
